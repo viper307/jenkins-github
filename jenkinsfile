@@ -1,9 +1,10 @@
 pipeline {
     agent any
+    
     stages {
-        stage('Clone') {
+        stage('Hello') {
             steps {
-                git 'https://github.com/viper307/jenkins-github.git'
+                echo 'Hello World'
             }
         }
     }
